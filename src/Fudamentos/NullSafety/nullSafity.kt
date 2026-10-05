@@ -61,3 +61,13 @@ fun saudarCliente(nome: String?) {
         println("Cliente Anonimo")
     }
 }
+
+
+fun listasEx(){
+    var lista: List<Int?> = listOf(1, 2, null, 3 ,4 )
+    //var listae: List<Int?> = null                   erro pois o tipo é null e não a lista de fato
+    var listae: List<Int>? = null // aqui sim funciona a lista recebe null
+
+
+
+}

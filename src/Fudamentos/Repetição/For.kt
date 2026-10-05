@@ -1,11 +1,20 @@
 package Fudamentos.Repetição
 
+import Fudamentos.NullSafety23.saudarCliente
+import kotlin.concurrent.thread
+
 fun main() {
-    inicioFim(10, 20)
+    percorreLista()
 }
 
 fun printa1a10(){
     for (numero in 1..10){
+        println(numero)
+    }
+}
+
+fun excluiNumeroFinal(){
+    for (numero in 1 until 10){
         println(numero)
     }
 }
@@ -25,5 +34,24 @@ fun pularNumeros(){
 fun inicioFim(inicio: Int, fim: Int){
     for (numero in inicio..fim){
         println(numero)
+    }
+}
+
+fun conteagemRegressiva(){
+    for (i in 10 downTo 0 ){
+        println(i)
+        Thread.sleep(1000)
+    }
+
+}
+
+
+
+fun percorreLista() {
+    val sabores = listOf("Chocolate", "Morando", "Cenoura")
+
+    for (sabor in sabores){
+        println("Preparando a massa $sabor")
+        Thread.sleep(1000)
     }
 }
